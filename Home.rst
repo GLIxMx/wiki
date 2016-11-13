@@ -40,7 +40,7 @@ Instrucciones
     git branch -d mi-cambio-especifico
     git push
 
-Puedes usar la interfaz web en: http://wiki.glix.org.mx para ver lo que has publicado.
+Puedes usar la interfaz web en: http://wiki.glix.org.mx para ver lo que has publicado; la cual se actualiza cada 5 minutos.
 
 En caso de que quieras usar gollum localmente, para editar la wiki, solamente necesitas hacer lo siguiente:
 
@@ -55,7 +55,7 @@ En caso de que quieras usar gollum localmente, para editar la wiki, solamente ne
     # obtener los archivos necesarios
     wget -c --no-check-certificate http://wiki.glix.org.mx/Home/glix-wiki.tar.gz
 
-    # descomprimirla
+    # descomprimirlos
     tar -xaf glix-wiki.tar.xz
 
     # generar la configuración de thin
