@@ -9,26 +9,36 @@ Instrucciones
 
 .. code:: bash
 
-    # clona el repositorio
+    # haz un fork del repositorio en github y clona tu propio repositorio
     mkdir -p ~/src/glix
     cd ~/src/glix
-    git clone ssh://<usuario>@glix.org.mx/srv/git/repos/glix-wiki.git wiki
+    git clone git@github.com:<usuario>/wiki.git
 
     # si ya habías clonado el repo, entonces, haz pull primero:
     cd ~/src/glix/wiki
     git pull origin master
 
+    # crea una branch para hacerun cambio específico
+    git checkout -b mi-cambio-especifico
+
     # haz algunos cambios
-    ## vim algo_chido.rst
+    vim algo_chido.rst
 
     ## commit
-    ## git commit -m 'algo chido: es mi borrador inicial' algo_chido.rst
+    git commit -m 'algo chido: es mi borrador inicial' algo_chido.rst
 
     ## push (si es la primera vez, usa -u)
-    ## git push -u origin master
+    git push -u origin mi-cambio-especifico
 
     ## push (de la segunda para adelante)
-    ## git push
+    git push
+
+    # haz un pull request a https://github.com/GLIxMx/wiki.
+
+    # cuando sea aceptado, borra tu branch local y remota
+    git checkout master
+    git branch -d mi-cambio-especifico
+    git push
 
 Puedes usar la interfaz web en: http://wiki.glix.org.mx para ver lo que has publicado.
 
