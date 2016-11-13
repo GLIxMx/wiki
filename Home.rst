@@ -53,7 +53,7 @@ En caso de que quieras usar gollum localmente, para editar la wiki, solamente ne
     cd glix-gollum
 
     # obtener los archivos necesarios
-    wget -c --no-check-certificate http://wiki.glix.org.mx/Home/glix-wiki.tar.gz
+    wget -c http://wiki.glix.org.mx/Home/glix-wiki.tar.gz
 
     # descomprimirlos
     tar -xaf glix-wiki.tar.xz
